@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unilab | Home</title>
+
+    <!-- style -->
+    <link rel="stylesheet" href="./style/normalize.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/responsive.css">
+
+</head>
+<body>
+    <nav role="navbar" id="defaultNav">
+        <div class="nav-container">
+          <a href="index.html" class="logo">Logo</a>
+          <ul>
+            <li><a href="#" aria-label="Homepage" class="active-page">Home</a></li>
+            <li><a href="info.html" aria-label="Discovery page">Discovery</a></li>
+            <li><a href="#" aria-label="Photos page">Photos</a></li>
+            <li><a href="#" aria-label="Contact page">Contact</a></li>
+            <a href="#" class="profile-image-navbar"><img src="./src/homepage/user-pfp.png" alt="User picture"></a>
+          </ul>
+        </div>
+    </nav>
+    <nav role="navbar" id="mobileNav">
+        <div class="mobile-nav-container">
+            <svg id="burgerIcon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="14.001" viewBox="0 0 16 14.001">
+                <defs>
+                  <clipPath id="clip-path">
+                    <rect width="16" height="14.001" fill="none"/>
+                  </clipPath>
+                </defs>
+                <g id="menu_icon" data-name="menu icon" clip-path="url(#clip-path)">
+                  <path id="menu_icon-2" data-name="menu icon" d="M-6407-6020a1,1,0,0,1-1-1,1,1,0,0,1,1-1h14a1,1,0,0,1,1,1,1,1,0,0,1-1,1Zm0-6a1,1,0,0,1-1-1,1,1,0,0,1,1-1h8a1,1,0,0,1,1,1,1,1,0,0,1-1,1Zm0-6a1,1,0,0,1-1-1,1,1,0,0,1,1-1h14a1,1,0,0,1,1,1,1,1,0,0,1-1,1Z" transform="translate(6408 6034)" fill="#343638"/>
+                </g>
+            </svg>              
+            <a href="logo">logo</a>
+            <a href="#" class="profile-image-navbar"><img src="./src/homepage/user-pfp.png" alt="User picture"></a>
+        </div>
+    </nav>
+    <div class="burger-menu" id="burgerMenu">
+        <div class="burger-flex" id="burgerInner" style="display: none; opacity: 0;">
+            <a href="#" id="burgerLogo">logo</a>
+            <ul>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                        <path class="active-burger" fill="#00000080" id="home" d="M0,8,8,0l8,8v8H11V10H5v6H0Z" fill="#202124" fill-rule="evenodd"/>
+                    </svg>
+                    <a class="active-burger" href="#">home</a>
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+                        <defs>
+                          <clipPath id="clip-path">
+                            <rect width="16" height="16" fill="none"/>
+                          </clipPath>
+                        </defs>
+                        <g id="discover" clip-path="url(#clip-path)">
+                          <path fill="#00000080" id="discover-2" data-name="discover" d="M12,4,6.7,6.7,4,12,9.3,9.3ZM8,16a8,8,0,1,1,8-8A8.024,8.024,0,0,1,8,16Z" fill="#343638" fill-rule="evenodd"/>
+                        </g>
+                    </svg>
+                    <a href="#">discovery</a>
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="14" viewBox="0 0 16 14">
+                        <defs>
+                          <clipPath id="clip-path">
+                            <rect width="16" height="14" fill="none"/>
+                          </clipPath>
+                        </defs>
+                        <g id="photos" clip-path="url(#clip-path)">
+                          <path fill="#00000080" id="photos-2" data-name="photos" d="M0,0V14H16V0ZM14,12H11L6.5,7.5,2,12V2H14Z" fill="#343638" fill-rule="evenodd"/>
+                        </g>
+                      </svg>
+                    <a href="#">photos</a>
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="12" viewBox="0 0 16 12">
+                        <defs>
+                          <clipPath id="clip-path">
+                            <rect width="16" height="12" fill="none"/>
+                          </clipPath>
+                        </defs>
+                        <g id="mail" clip-path="url(#clip-path)">
+                          <path fill="#00000080" id="mail-2" data-name="mail" d="M0,0V12H16V0ZM8,8,2,2H14Z" fill="#343638" fill-rule="evenodd"/>
+                        </g>
+                    </svg>
+                    <a href="#">contact</a>
+                </li>
+                <li>
+                    <img src="./src/homepage/user-pfp.png" alt="Current user profile picture">
+                    <a href="#">profile</a>
+                </li>
+            </ul>
+            <footer role="burger footer">
+                <section class="footer-left-flex">
+                    <ul class="footer-list">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Guidelines</a></li>
+                    </ul>
+                    <ul class="footer-list">
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Advertise</a></li>
+                        <li><a href="#">Integrations</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </section>
+                <section class="footer-right-flex">
+                    <div class="social-links">
+                        <a href="#"><img src="./src/homepage/instagram.png" alt="instagram-social-button"></a>
+                        <a href="#"><img src="./src/homepage/twitter.png" alt="twitter-social-button"></a>
+                        <a href="#"><img src="./src/homepage/facebook.png" alt="facebook-social-button"></a>
+                        <a href="#"><img src="./src/homepage/web.png" alt="web-social-button"></a>
+                    </div>
+                </section>
+            </footer>
+        </div>
+    </div>
+    <header role="header">
+        <div class="hero">
+            <img src="./src/homepage/hero-image.png" alt="hero-image">
+            <div class="hero-text-area">
+                <h1>world news</h1>
+                <hr>
+                <h2 id="heroTxtH2">Amazing places in America to visit.</h2>
+                <p>For some reason — this country, this city, this neighborhood, this particular street —  is the place you are living a majority of your life in.</p>
+                <a href="story.html"><button>learn more</button></a>
+            </div>
+        </div>
+        <div class="more-news">
+            <div class="news-scroll">
+                <h1>more news</h1>
+                <div class="news-scroll-arrows">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="6" height="10" viewBox="0 0 6 10">
+                            <defs>
+                              <clipPath id="clip-path">
+                                <rect width="6" height="10" fill="none"/>
+                              </clipPath>
+                            </defs>
+                            <g id="arrow_back" data-name="arrow back" opacity="0.3" clip-path="url(#clip-path)">
+                              <path id="arrow_back-2" data-name="arrow back" d="M5,6a.908.908,0,0,1-.7-.3l-4-4A.967.967,0,0,1,.3.3.967.967,0,0,1,1.7.3L5,3.6,8.3.3A.967.967,0,0,1,9.7.3a.967.967,0,0,1,0,1.4l-4,4A.908.908,0,0,1,5,6Z" transform="translate(6) rotate(90)" fill="#202124"/>
+                            </g>
+                        </svg>    
+                    </a>
+                    <a href="#">
+                        <svg id="arrow" xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10">
+                            <path id="arrow-2" data-name="arrow" d="M5,6a.908.908,0,0,1-.7-.3l-4-4A.967.967,0,0,1,.3.3.967.967,0,0,1,1.7.3L5,3.6,8.3.3A.967.967,0,0,1,9.7.3a.967.967,0,0,1,0,1.4l-4,4A.908.908,0,0,1,5,6Z" transform="translate(0 10) rotate(-90)" fill="#202124"/>
+                        </svg>  
+                    </a>
+                </div>
+            </div>
+            <hr>         
+            <div class="more-news-article-section">
+                <article>
+                    <h3>travel</h3>
+                    <h4>article title</h4>
+                    <p>Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat…</p>
+                    <div class="post-time-counter">
+                        <svg id="time" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                            <path id="Path_5" data-name="Path 5" d="M8,0a8,8,0,1,0,8,8A8.024,8.024,0,0,0,8,0ZM8,14a6,6,0,1,1,6-6A6.018,6.018,0,0,1,8,14ZM9,7.6l2.7,2.7-1.4,1.4L7,8.4V3H9Z" fill="#cbd0d3"/>
+                        </svg>
+                        <p><span>2</span> min ago</p>
+                    </div>
+                </article>
+                <article>
+                    <h3>technology</h3>
+                    <h4>article title</h4>
+                    <p>Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat…</p>
+                    <div class="post-time-counter">
+                        <svg id="time" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                            <path id="Path_5" data-name="Path 5" d="M8,0a8,8,0,1,0,8,8A8.024,8.024,0,0,0,8,0ZM8,14a6,6,0,1,1,6-6A6.018,6.018,0,0,1,8,14ZM9,7.6l2.7,2.7-1.4,1.4L7,8.4V3H9Z" fill="#cbd0d3"/>
+                        </svg>
+                        <p><span>2</span> min ago</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </header>
+    <section role="trending" class="trending-section">
+        <h1>trending</h1>
+        <div class="trending-wrapper">
+            <div class="trending-child">
+                <img src="./src/homepage/trending-img1.png" alt="picture of nature">
+                <h4>Dolore magna aliqua</h4>
+                <p>Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat.</p>
+                <div class="post-time-counter">
+                    <svg id="time" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                        <path id="Path_5" data-name="Path 5" d="M8,0a8,8,0,1,0,8,8A8.024,8.024,0,0,0,8,0ZM8,14a6,6,0,1,1,6-6A6.018,6.018,0,0,1,8,14ZM9,7.6l2.7,2.7-1.4,1.4L7,8.4V3H9Z" fill="#cbd0d3"/>
+                    </svg>
+                    <p><span>2</span>m ago</p>
+                </div>
+            </div>
+            <div class="trending-child">
+                <img src="./src/homepage/trending-img2.png" alt="picture of beach umbrellas">
+                <h4>Morbi eleifend a libero</h4>
+                <p>Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat.</p>
+                <div class="post-time-counter">
+                    <svg id="time" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                        <path id="Path_5" data-name="Path 5" d="M8,0a8,8,0,1,0,8,8A8.024,8.024,0,0,0,8,0ZM8,14a6,6,0,1,1,6-6A6.018,6.018,0,0,1,8,14ZM9,7.6l2.7,2.7-1.4,1.4L7,8.4V3H9Z" fill="#cbd0d3"/>
+                    </svg>
+                    <p><span>1</span>h ago</p>
+                </div>
+            </div>
+            <div class="trending-child">
+                <img src="./src/homepage/trending-img3.png" alt="picture of two skiers">
+                <h4>Morbi eleifend a libero</h4>
+                <p>Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat.</p>
+                <div class="post-time-counter">
+                    <svg id="time" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                        <path id="Path_5" data-name="Path 5" d="M8,0a8,8,0,1,0,8,8A8.024,8.024,0,0,0,8,0ZM8,14a6,6,0,1,1,6-6A6.018,6.018,0,0,1,8,14ZM9,7.6l2.7,2.7-1.4,1.4L7,8.4V3H9Z" fill="#cbd0d3"/>
+                    </svg>
+                    <p><span>3</span>h ago</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section role="happening-now" class="grid-content-section">
+        <div class="happening-header-flex">
+            <h1>happening now</h1>
+            <div class="news-scroll-arrows">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="6" height="10" viewBox="0 0 6 10">
+                    <defs>
+                      <clipPath id="clip-path">
+                        <rect width="6" height="10" fill="none"/>
+                      </clipPath>
+                    </defs>
+                    <g id="arrow_back" data-name="arrow back" opacity="0.3" clip-path="url(#clip-path)">
+                      <path id="arrow_back-2" data-name="arrow back" d="M5,6a.908.908,0,0,1-.7-.3l-4-4A.967.967,0,0,1,.3.3.967.967,0,0,1,1.7.3L5,3.6,8.3.3A.967.967,0,0,1,9.7.3a.967.967,0,0,1,0,1.4l-4,4A.908.908,0,0,1,5,6Z" transform="translate(6) rotate(90)" fill="#202124"/>
+                    </g>
+                </svg>    
+                <svg id="arrow" xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10">
+                    <path id="arrow-2" data-name="arrow" d="M5,6a.908.908,0,0,1-.7-.3l-4-4A.967.967,0,0,1,.3.3.967.967,0,0,1,1.7.3L5,3.6,8.3.3A.967.967,0,0,1,9.7.3a.967.967,0,0,1,0,1.4l-4,4A.908.908,0,0,1,5,6Z" transform="translate(0 10) rotate(-90)" fill="#202124"/>
+                </svg>  
+            </div>
+        </div>
+        <div class="grid-parent">
+            <div class="column">
+                <div id="GoldenGate" class="grid-child">
+                    <img src="./src/homepage/golden-gate.png" alt="Picture of the golden gate bridge">
+                    <div class="golden-gate-textover">
+                        <h2>city</h2>
+                        <h1>Large article title</h1>
+                        <h3>Lorem ipsum dolor sit amet, in eam odio amet, vix id nullam detracto, vidit vituperatoribus duo</h3>
+                        <div class="post-time-counter">
+                            <svg id="time" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                <path id="Path_5" data-name="Path 5" d="M8,0a8,8,0,1,0,8,8A8.024,8.024,0,0,0,8,0ZM8,14a6,6,0,1,1,6-6A6.018,6.018,0,0,1,8,14ZM9,7.6l2.7,2.7-1.4,1.4L7,8.4V3H9Z" fill="#cbd0d3"/>
+                            </svg>
+                            <p><span>2</span>m ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="Forest" class="grid-child">
+                    <img src="./src/homepage/nature-forest.png" alt="Picture of the forest">
+                    <div class="forest-textover">
+                        <h2>travel</h2>
+                        <h1>Large article title</h1>
+                        <h3>Lorem ipsum dolor sit amet, in eam odio amet, vix id nullam detracto, vidit vituperatoribus duo</h3>
+                        <div class="post-time-counter">
+                            <svg id="time" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                <path id="Path_5" data-name="Path 5" d="M8,0a8,8,0,1,0,8,8A8.024,8.024,0,0,0,8,0ZM8,14a6,6,0,1,1,6-6A6.018,6.018,0,0,1,8,14ZM9,7.6l2.7,2.7-1.4,1.4L7,8.4V3H9Z" fill="#cbd0d3"/>
+                            </svg>
+                            <p><span>2</span>m ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div id="Elephant" class="grid-child">
+                    <img src="./src/homepage/elephant.png" alt="Picture of an elephant">
+                    <h4>Small title</h4>
+                    <div class="post-time-counter">
+                        <svg id="time" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                            <path id="Path_5" data-name="Path 5" d="M8,0a8,8,0,1,0,8,8A8.024,8.024,0,0,0,8,0ZM8,14a6,6,0,1,1,6-6A6.018,6.018,0,0,1,8,14ZM9,7.6l2.7,2.7-1.4,1.4L7,8.4V3H9Z" fill="#cbd0d3"/>
+                        </svg>
+                        <p><span>3</span>h ago by <a href="#">Worldnews</a></p>
+                    </div>
+                </div>
+                <div id="Parrot" class="grid-child">
+                    <img src="./src/homepage/parrot.png" alt="Picture of a parrot">
+                    <h4>Small title</h4>
+                    <div class="post-time-counter">
+                        <svg id="time" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                            <path id="Path_5" data-name="Path 5" d="M8,0a8,8,0,1,0,8,8A8.024,8.024,0,0,0,8,0ZM8,14a6,6,0,1,1,6-6A6.018,6.018,0,0,1,8,14ZM9,7.6l2.7,2.7-1.4,1.4L7,8.4V3H9Z" fill="#cbd0d3"/>
+                        </svg>
+                        <p><span>4</span>h ago by <a href="#">Days</a></p>
+                    </div>
+                </div>
+                <div id="NarrowRoad" class="grid-child">
+                    <img src="./src/homepage/nature-narrow-road.png" alt="Picture of a narrow road on mountain">
+                    <h4>Small title</h4>
+                    <div class="post-time-counter">
+                        <svg id="time" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                            <path id="Path_5" data-name="Path 5" d="M8,0a8,8,0,1,0,8,8A8.024,8.024,0,0,0,8,0ZM8,14a6,6,0,1,1,6-6A6.018,6.018,0,0,1,8,14ZM9,7.6l2.7,2.7-1.4,1.4L7,8.4V3H9Z" fill="#cbd0d3"/>
+                        </svg>
+                        <p><span>3</span>h ago by <a href="#">Monica</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer role="footer">
+        <section class="footer-left-flex">
+            <a href="#" class="logo">Logo</a>
+            <div class="footer-list-container">
+                <ul class="footer-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Discovery</a></li>
+                    <li><a href="#">Photos</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <ul class="footer-list">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Guidelines</a></li>
+                </ul>
+                <ul class="footer-list">
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Advertise</a></li>
+                    <li><a href="#">Integrations</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="footer-right-flex">
+            <div class="email-input">
+                <input id="email" type="email" placeholder="Email">
+                <input id="submitClick" type="submit">
+                <label for="email">Stay in touch with us for the freshest products!</label>
+            </div>
+            <div class="social-links">
+                <a href="#"><img src="./src/homepage/instagram.png" alt="instagram-social-button"></a>
+                <a href="#"><img src="./src/homepage/twitter.png" alt="twitter-social-button"></a>
+                <a href="#"><img src="./src/homepage/facebook.png" alt="facebook-social-button"></a>
+                <a href="#"><img src="./src/homepage/web.png" alt="web-social-button"></a>
+            </div>
+        </section>
+    </footer>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>

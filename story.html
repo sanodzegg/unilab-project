@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unilab | Story</title>
+
+    <!-- style -->
+    <link rel="stylesheet" href="./style/normalize.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/responsive.css">
+</head>
+<body>
+    <nav role="navbar" id="defaultNavStory">
+        <div class="nav-container">
+          <a href="index.html" class="logo">Logo</a>
+          <ul>
+            <li><a href="#" aria-label="Homepage" class="active-page">Home</a></li>
+            <li><a href="#" aria-label="Discovery page">Discovery</a></li>
+            <li><a href="#" aria-label="Photos page">Photos</a></li>
+            <li><a href="#" aria-label="Contact page">Contact</a></li>
+            <a href="#" class="profile-image-navbar"><img src="./src/homepage/user-pfp.png" alt="User picture"></a>
+          </ul>
+        </div>
+    </nav>
+    <nav role="navbar" id="mobileNavStory">
+        <div class="mobile-nav-container-story">
+        <a href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+                <defs>
+                <clipPath id="clip-path">
+                    <rect width="16" height="16" fill="none"/>
+                </clipPath>
+                </defs>
+                <g id="Arrow_Back" data-name="Arrow Back" clip-path="url(#clip-path)">
+                <path id="Arrow_Back-2" data-name="Arrow Back" d="M16,7H3.8L9.4,1.4,8,0,0,8l8,8,1.4-1.4L3.8,9H16Z" fill="#343638"/>
+                </g>
+            </svg> 
+        </a>           
+            <svg id="filter" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+              <path fill="#000" id="filter-2" data-name="filter" d="M16,1V3H5.7A1.945,1.945,0,0,1,2.3,3H0V1H2.3A1.945,1.945,0,0,1,5.7,1ZM12,6a1.936,1.936,0,0,0-1.7,1H0V9H10.3a1.945,1.945,0,0,0,3.4,0H16V7H13.7A1.936,1.936,0,0,0,12,6ZM8,12a1.936,1.936,0,0,0-1.7,1H0v2H6.3a1.945,1.945,0,0,0,3.4,0H16V13H9.7A1.936,1.936,0,0,0,8,12Z" fill="#575f66"/>
+            </svg>
+        </div>
+    </nav>
+    <div class="story-heading">
+        <div class="heading-current-page">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                <path id="home" d="M0,8,8,0l8,8v8H11V10H5v6H0Z" fill="#202124" fill-rule="evenodd"/>
+            </svg>
+            <span id="currentPage">story</span>
+            /
+            <span id="currentSection">world news</span>             
+        </div>
+        <div class="heading-filter">
+            <svg class="absolute-center" id="filter" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                <path id="filter-2" data-name="filter" d="M16,1V3H5.7A1.945,1.945,0,0,1,2.3,3H0V1H2.3A1.945,1.945,0,0,1,5.7,1ZM12,6a1.936,1.936,0,0,0-1.7,1H0V9H10.3a1.945,1.945,0,0,0,3.4,0H16V7H13.7A1.936,1.936,0,0,0,12,6ZM8,12a1.936,1.936,0,0,0-1.7,1H0v2H6.3a1.945,1.945,0,0,0,3.4,0H16V13H9.7A1.936,1.936,0,0,0,8,12Z" fill="#575f66"/>
+              </svg>
+        </div>
+    </div>
+    <header class="story-header" role="header">
+        <div class="story-hero">
+            <img src="./src/story/hero-image.png" alt="hero-image">
+            <div class="story-hero-textarea absolute-center">
+                <h1>world news</h1>
+                <hr>
+                <h2 id="h2StoryHeader">Lorem ipsum dolor sit amet, in eam odio amet,</h2>
+                <div class="hero-avatar"><img src="./src/story/avatar.png" alt="Hero avatar icon"></div>
+            </div>
+        </div>
+        <div class="story-date-selector">
+            <label for="date">Select a date</label>
+            <select name="date-selector" id="date">
+                <option id="" value="default" disabled selected hidden>Select...</option>
+                <option value="option1">Option#1</option>
+                <option value="option2">Option#2</option>
+                <option value="option3">Option#3</option>
+            </select>
+            <label for="keywords">Enter first keywords</label>
+            <input type="text" name="keywords">
+        </div>
+    </header>
+    <section role="paragraph" class="paragraph-section">
+        <hr>
+        <div class="paragraph-flex">
+            <div>
+                <img src="./src/story/avatar.png" alt="Paragraph avatar icon">
+                <h1>Phasellus eu nulla malesuada, luctus diam.</h1>
+            </div>
+            <div class="paragraph-child-flex">
+                <div>
+                    <p>
+                        Dignissim rutrum ridiculus lacinia phasellus torquent ad aliquet, 
+                        nisi dictum cubilia class habitasse commodo, semper potenti nec ac per egestas. 
+                        Ac volutpat ullamcorper phasellus montes sollicitudin litora ridiculus mi conubia 
+                        inceptos euismod odio curabitur, tortor eros porta venenatis facilisis quam blandit 
+                        in ut lobortis consequat justo. Hac libero quisque tortor conubia iaculis 
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        Nascetur himenaeos morbi gravida porta sapien justo aliquam pellentesque
+                        dapibus curae, cursus ultrices suspendisse cras ligula id aenean vulputate 
+                        taciti, eleifend eros bibendum scelerisque lobortis venenatis nulla tristique 
+                        tempus. Quisque eleifend vulputate.
+                    </p>
+                    <div class="post-time-counter">
+                        <svg id="time" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                            <path id="Path_5" data-name="Path 5" d="M8,0a8,8,0,1,0,8,8A8.024,8.024,0,0,0,8,0ZM8,14a6,6,0,1,1,6-6A6.018,6.018,0,0,1,8,14ZM9,7.6l2.7,2.7-1.4,1.4L7,8.4V3H9Z" fill="#cbd0d3"/>
+                        </svg>
+                        <p><span>2</span> min ago</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </section>
+    <section role="paragraph-description" class="paragraph-desc">
+        <div><img src="./src/story/elephant.png" alt="Picture of an elephant"></div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipiscing elit sodales primis,
+                mollis viverra conubia ligula inceptos laoreet libero tortor, nascetur
+                non habitasse iaculis tempor nec egestas fames augue, platea porta integer
+                nostra curae sed arcu. Nec ut diam vulputate ante scelerisque ridiculus 
+                lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper a 
+                porttitor nibh fermentum nisi cum morbi aliquam. Vitae pretium vestibulum 
+                dui gravida in potenti interdum, class rhoncus neque eget magna at
+            </p>
+            <p>
+                Ullamcorper porttitor non pharetra cursus nisl mollis pellentesque primis 
+                penatibus platea, dictum himenaeos eget mi bibendum ad molestie aliquet curae 
+                quis quisque, nunc duis ac at elementum dui integer viverra tempus. Lacinia 
+                bibendum diam senectus egestas nec molestie convallis aenean hac tempus, vivamus 
+                purus congue euismod fringilla cursus donec est eu blandit platea, feugiat vitae 
+                netus orci habitant accumsan placerat morbi nostra.
+            </p>
+            <p>In hac habitasse platea dictumst. Sed nec venenatis odio. Nulla faucibus ipsum sed faucibus accumsan. Donec rhoncus luctus.</p>
+        <hr>
+        <div class="pagination">
+            <div>
+                <a href="#" class="active-pagination">01</a>
+                <a href="#">02</a>
+                <a href="#">03</a>
+                <a href="#">04</a>
+                <a href="#">05</a>
+                <a href="#">06</a>
+                <a href="#" style="color: #000;">•••</a>
+            </div>
+        </div>
+    </section>
+    <footer role="footer">
+        <section class="footer-left-flex">
+            <a href="#" class="logo">Logo</a>
+            <ul class="footer-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Discovery</a></li>
+                <li><a href="#">Photos</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <ul class="footer-list">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Guidelines</a></li>
+            </ul>
+            <ul class="footer-list">
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Advertise</a></li>
+                <li><a href="#">Integrations</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+        </section>
+        <section class="footer-right-flex">
+            <div class="email-input">
+                <input id="email" type="email" placeholder="Email">
+                <input id="submitClick" type="submit">
+                <label for="email">Stay in touch with us for the freshest products!</label>
+            </div>
+            <div class="social-links">
+                <a href="#"><img src="./src/homepage/instagram.png" alt="instagram-social-button"></a>
+                <a href="#"><img src="./src/homepage/twitter.png" alt="twitter-social-button"></a>
+                <a href="#"><img src="./src/homepage/facebook.png" alt="facebook-social-button"></a>
+                <a href="#"><img src="./src/homepage/web.png" alt="web-social-button"></a>
+            </div>
+        </section>
+    </footer>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
