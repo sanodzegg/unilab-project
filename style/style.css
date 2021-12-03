@@ -68,6 +68,7 @@
 }
 
 body {
+    overflow: hidden;
     scroll-behavior: smooth;
 }
 
