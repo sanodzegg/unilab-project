@@ -15,19 +15,19 @@ let burgerInner = document.getElementById('burgerInner');
 
 document.getElementById('burgerIcon').onclick = function(){
   burgerMenu.style.width = '287px';
-  burgerMenu.style.transition = 'width 1s';
+  burgerMenu.style.transition = 'width .7s';
   burgerInner.style.display = 'block';
   setTimeout(()=>{
-    burgerInner.style.transition = 'opacity 1s';
+    burgerInner.style.transition = 'opacity .5s';
     burgerInner.style.opacity = '1';
-  },1000);
+  },500);
 }
 document.getElementById('burgerLogo').onclick = function(){
   burgerInner.style.opacity = '0';
   setTimeout(()=>{
     burgerMenu.style.width = '0px';
     burgerInner.style.display = 'none';
-  },1000);
+  },500);
 }
 
 function fetchApi(v){
