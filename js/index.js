@@ -21,6 +21,7 @@ document.getElementById('burgerIcon').onclick = function(){
     burgerInner.style.transition = 'opacity .5s';
     burgerInner.style.opacity = '1';
   },500);
+  document.querySelector('html').style.overflow = 'hidden';
 }
 document.getElementById('burgerLogo').onclick = function(){
   burgerInner.style.opacity = '0';
@@ -28,6 +29,7 @@ document.getElementById('burgerLogo').onclick = function(){
     burgerMenu.style.width = '0px';
     burgerInner.style.display = 'none';
   },500);
+  document.querySelector('html').style.overflow = 'auto';
 }
 
 function fetchApi(v){
@@ -49,7 +51,6 @@ function fetchApi(v){
       <p>Content: ${data[i].body}</p>
       `;
     }
-    console.log(data);
   });
   for(let i = 0; i < 10; i++) {
     document.getElementById(`a${i}`).onclick = function() {

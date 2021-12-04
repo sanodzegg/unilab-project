@@ -499,6 +499,7 @@ footer {
     width: 100%;
     margin: 100px auto 0;
     background-color: var(--par-color);
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -560,12 +561,15 @@ footer > * {
 }
 
 .email-input > input {
+    outline: none;
     width: 218px;
     height: 36px;
     border-radius: 6px;
     border: 2px #B8BEC3 solid;
     padding: 0 20px;
     background-color: transparent;
+    font-family: Helvetica, serif;
+    font-size: 14px;
 }
 
 .email-input > input::-webkit-input-placeholder {
@@ -955,6 +959,7 @@ input[type=text], select {
     z-index: 1;
     width: 0px;
     height: 100vh;
+    overflow: auto;
     background-color: var(--body-color);
     -webkit-box-shadow: 0px 0px 100px #00000099;
             box-shadow: 0px 0px 100px #00000099;
