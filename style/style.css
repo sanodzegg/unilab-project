@@ -718,6 +718,10 @@ footer > * {
     margin-bottom: 40px;
 }
 
+.story-date-selector > button {
+    margin-top: 40px;
+}
+
 label {
     display: inline-block;
     max-width: 130px;
